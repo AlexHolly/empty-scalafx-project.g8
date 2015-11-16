@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<!-- important stuff
+Find fx:any in Scene Builder under "Code" not the Id in "properties"!
+PATH TO CONTROLLER CLASS
+fx:controller="$package$.FirstSceneController"
+BUTTON ID
+fx:id="pushMeButton"
+	EVENT METHOD
+	onAction="#onButtonDown"
+LABEL ID
+fx:id="outLabel" -->
+
+<AnchorPane prefHeight="77.0" prefWidth="268.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="$package$.FirstSceneController">
+	<children>
+		<Button fx:id="pushMeButton" layoutX="75.0" layoutY="68.0"
+			mnemonicParsing="false" onAction="#onButtonDown" text="Push Me"
+			textAlignment="CENTER" AnchorPane.bottomAnchor="10.0"
+			AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="76.0" />
+		<Label fx:id="outLabel" alignment="CENTER" contentDisplay="CENTER"
+			layoutX="97.0" layoutY="21.0" text="?" textAlignment="CENTER"
+			AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="97.0"
+			AnchorPane.rightAnchor="97.0" AnchorPane.topAnchor="10.0" />
+	</children>
+</AnchorPane>
